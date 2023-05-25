@@ -1,0 +1,1 @@
+- In react app we want to track input elements and their values. The input will be the user prompt. So we use useState. 
