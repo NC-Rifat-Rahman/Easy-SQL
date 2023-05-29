@@ -1,1 +1,10 @@
+# Frontend
 - In react app we want to track input elements and their values. The input will be the user prompt. So we use useState. 
+
+# Backend
+- The plan is to take input, the input will call API "x" which I created. The "x" will call the openAI API.
+* api.js
+- Here we configure our api
+- in api.js "openai" is the object that we are going to use so that we can make the api calls;
+    we did the configuartion to pass into our openai client.
+    // cont openai = new OpenAIApi() Here we made an instance of the openai client.
