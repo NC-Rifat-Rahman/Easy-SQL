@@ -1,5 +1,8 @@
 # Frontend
 - In react app we want to track input elements and their values. The input will be the user prompt. So we use useState. 
+# App.jsx
+- generateQuery function will be async because it will be calling our API. The "response" inside the function will return an object containing the generated query.
+- To show generated qury as a output instead of console output we use useState[sqlQuery].
 
 # Backend
 - The plan is to take input, the input will call API "x" which I created. The "x" will call the openAI API.
@@ -8,3 +11,7 @@
 - in api.js "openai" is the object that we are going to use so that we can make the api calls;
     we did the configuartion to pass into our openai client.
     // cont openai = new OpenAIApi() Here we made an instance of the openai client.
+
+# generate.js
+- "generate" function will make a request to my openAIApi in order to generate the sql code from queryDescription
+- we make the function async because in this function we call "openai" from "api,js", and it will call the remote api from OPENAI. So it's async.
